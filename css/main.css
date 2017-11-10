@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'header-font';
+  src: url("fonts/EncodeSansExpanded-Thin.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'body-font';
+  src: url("fonts/EncodeSansExpanded-Regular.ttf") format('truetype');
+}
+
+/***
+ -  site wide settings - adapted from P02 rewind
+***/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'header-font', sans-serif;
+  letter-spacing: 0.13rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.7rem;
+  letter-spacing: 0.4rem;
+  margin-top: 15%;
+  margin-bottom: 1.3rem;
+  box-shadow: 0 8px 6px -8px black;
+}
+
+p {
+  font-family: 'body-font', sans-serif;
+  margin-right: 0.9rem;
+  margin-left: 0.9rem;
+  line-height: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+/***
+Structuring - adapted from P02 rewind
+***/
+
+section, .flex-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-display {
+  align-items: center;
+}
+
+.hero {
+  height: 75vh;
+}
+
+.con40 {
+  width: 40%;
+}
+
+.con70 {
+  width: 70%;
+}
+
+.about {
+  height: 100vh;
+}
+
+.lineup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 10rem;
+}
+
+/***
+container and font colour styling
+***/
+
+.fontcol1 {
+  color: #595959;
+}
+
+.fontcol2 {
+  color: #e8e8e8;
+}
+
+.bg1 {
+  background-color: #e8e8e8;
+}
+
+.bg1:hover, .bg1:active, .bg1:focus {
+  background-color: #FF3F4C;
+}
+
+.bg2 {
+  background-color: #595959;
+}
+
+.bg2:hover, .bg2:active, .bg2:focus {
+  background-color: #5BC0EB;
+}
+
+.bg3 {
+  background-color: #e8e8e8;
+}
+
+.bg3:hover, .bg3:active, .bg3:focus {
+  background-color: #FDE74C;
+}
+
+.bg1z {
+  background-color: #e8e8e8;
+}
+
+#linkedin {
+  background-color: #FDC5F5;
+}
+
+#flckr {
+  background-color: #AFEDB7;
+}
+
+#insta {
+  background-color: #AFA7F9;
+}

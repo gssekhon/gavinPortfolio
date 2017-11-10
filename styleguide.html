@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- styleguide layout from previous project http://www.sfu.ca/~gssekhon/iat339/Rewind-Styleguide/ done by Eivan Nisperos and I-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gavin Portfolio Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylemain.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  </head>
+
+  <body>
+    <div class="flex-display" id="menu-content-grid">
+      <nav class="flex-display" id="styleguide-menu">
+        <div id="styleguide-menu-links" class="flex-display">
+          <a class="nav-link" href="index.html">Portfolio</a>
+          <a class="nav-link" href="#interactive-elements">Interactive Elements</a>
+          <a class="nav-link" href="#text-styles">Text Styles</a>
+          <a class="nav-link" href="#combined-elements">Combined Elements</a>
+          <a class="nav-link" href="#citations">Citations</a>
+          <a class="nav-link" id="close-menu-btn">X</a>
+        </div>
+      </nav>
+
+      <div class="flex-display" id="styleguide-content">
+        <nav class="flex-display" id="toggle-menu-nav">
+          <a class="mobile-icon-link" id="toggle-menu-btn"><img src="img/menu-toggle.png" alt="hidden menu, toggle to enable hidden menu"/></a>
+          <h1 id="home-link-icon">Portfolio</h1>
+        </nav>
+
+        <section id="interactive-elements">
+          <h2>Interactive Elements</h2>
+          <section class="sub-section" id="in-text-link">
+            <h3>In-text links</h3>
+            <text>
+              This is an example of an <a href="#" class="sub-button">in-text link</a>.
+            </text>
+            <code>
+              <text>&lt;a href="#" class="sub-button"&gt;</text>
+              <text style="padding-left: 30px;">in-text link</text>
+              <text>&lt;/a&gt;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="navigation-style">
+            <h3>Navigation Bar</h3>
+            <nav id="main-nav">
+              <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
+              <div id="main-nav-bar-hidden">
+                <div class="flex-display" id="home-close-btn-group">
+                  <a class="nav-link hidden-link" href="#">Link</a>
+                  <a class="nav-link hidden-link" id="close-nav">X</a>
+                </div>
+                <a class="nav-link hidden-link" href="#">Link</a>
+                <a class="nav-link hidden-link" href="#">Link</a>
+                <a class="nav-link hidden-link" href="#">Link</a>
+              </div>
+
+              <a class="nav-link" id="home-link-icon" href="#">Gavin</a>
+              <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+            </nav>
+
+            <code>
+              <text>&lt;nav id="main-nav"&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link"&gt;</text>
+              <text style="padding-left: 60px;">&lt;img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /&gt;</text>
+              <text style="padding-left: 30px;">&lt;/a&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;div id="main-nav-bar-hidden"&gt;</text>
+              <text style="padding-left: 60px;"><br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;/div&gt;</text>
+              <text style="padding-left: 30px;">&lt;a class="nav-link" id="home-link-icon" href="#"&gt;</text>
+              <text style="padding-left: 60px;">Gavin</text>
+              <text style="padding-left: 30px;">&lt;/a&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link" id="search-toggle"&gt;</text>
+              <text style="padding-left: 60px;">&lt;img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/&gt;</text>
+              <text style="padding-left: 30px;">&lt;/a&gt;</text>
+              <text><br /> &lt;/nav&gt;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="button-styles">
+            <h3>Button Styles</h3>
+            <div class="button-div">
+              <input class="button-back" type="button" value="Back" id="#" onclick="location.href='#'" />
+              <input class="button-go" type="submit" value="Go" />
+            </div>
+
+            <code>
+              <text>&lt;div class="button-div"&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;input class="button-back" type="button" value="Register" id="#" onclick="location.href='#'" /&gt;<br /> &lt;input class="button-go" type="submit" value="Sign In" /&gt;</text>
+              <text><br /> &lt;/div&gt;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="text-boxes">
+            <h3>Textboxes / Textareas</h3>
+            <h4>Textbox: Form</h4>
+            <form>
+              <input type="text" id="text-field" name="text" placeholder="text" required/>
+              <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+              <input type="email" id="email" name="email" placeholder="email" required />
+              <select name="country">
+                <option value="" disabled selected>Country</option>
+                <option value="CAN">
+                  Canada
+                </option>
+
+                <option value="USA">
+                  United States
+                </option>
+              </select>
+            </form>
+
+            <code>
+              <text>&lt;form&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;input type="text" id="text-field" name="text" placeholder="text" required/&gt;<br /> &lt;input type="password" id="password" name="pass-word" placeholder="&amp;#9679;&amp;#9679;&amp;" required/&gt;<br /> &lt;input type="email" id="email" name="email" placeholder="email" required /&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;select name="country" placeholder="Select Your Country"&gt;</text>
+              <text style="padding-left: 60px;"><br /> &lt;option value="" disabled selected&gt;Country&lt;/option&gt;<br /> &lt;option value="CAN"&gt;<br /> Canada<br /> &lt;/option&gt;</text>
+              <text style="padding-left: 60px;">&lt;option value="USA"&gt;<br /> United States<br /> &lt;/option&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;/select&gt;</text>
+              <text><br /> &lt;/form&gt;</text>
+              <text>&nbsp;</text>
+            </code>
+
+            <h4>Textbox: Textarea</h4>
+            <textarea id="page-textarea" placeholder="tell us what you think"></textarea>
+            <code>
+              <text>&lt;textarea id="page-textarea" placeholder="tell us what you think"&gt;&lt;/textarea&gt;</text>
+              <text>&nbsp;</text>
+            </code>
+          </section>
+        </section>
+
+        <section id="text-styles" >
+          <h2>In-text Styles</h2>
+          <section class="sub-section" id="header-levels">
+            <h3>Levels of Heading</h3>
+            <h1>Level 1</h1>
+            <h2>Level 2</h2>
+            <h3>Level 3</h3>
+            <h4>Level 4</h4>
+
+            <code>
+              <text>&lt;h1&gt;Level 1&lt;/h1&gt;<br /> &lt;h2&gt;Level 2&lt;/h2&gt;<br /> &lt;h3&gt;Level 3&lt;/h3&gt;<br /> &lt;h4&gt;Level 4&lt;/h4&gt;</text>
+              <text>&nbsp;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="paragraph-style">
+            <h3>Paragraph</h3>
+            <text>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </text>
+            <code>
+              <text>&lt;p&gt;<br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /> &lt;/p&gt;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="bullet-style">
+            <h3>Bullet List</h3>
+            <ul>
+              <li>
+                Item 1
+              </li>
+              <li>
+                Item 2
+              </li>
+              <li>
+                Item 3
+              </li>
+            </ul>
+
+            <code>
+              <text>&lt;ul&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 1<br /> &lt;/li&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 2<br /> &lt;/li&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 3<br /> &lt;/li&gt;</text>
+              <text><br /> &lt;/ul&gt;</text>
+            </code>
+          </section>
+
+          <section class="sub-section" id="numbered-list">
+            <h3>Numbered List</h3>
+            <ol>
+              <li>
+                Item 1
+              </li>
+              <li>
+                Item 2
+              </li>
+              <li>
+                Item 3
+              </li>
+            </ol>
+
+            <code>
+              <text>&lt;ol&gt;</text>
+              <text style="padding-left: 30px;"><br /> &lt;li&gt;<br /> Item 1<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> Item 2<br /> &lt;/li&gt;<br /> &lt;li&gt;<br /> Item 3<br /> &lt;/li&gt;</text>
+              <text><br /> &lt;/ol&gt;</text>
+            </code>
+          </section>
+        </section>
+
+        <section id="combined-elements">
+          <h2>Combined Elements</h2>
+          <section class="sub-section">
+            <h3>Product Listing</h3>
+            <section class="sub-section" id="product-listing">
+              <div class="product-listing">
+                <a href="#">
+                  <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
+                </a>
+                <div class="flex-display" id="product-title-genre">
+                  <div>
+                    <h3 class="product-list-title">The Intruder</h3>
+                    <figcaption class="product-genre-category">
+                      Action
+                    </figcaption>
+                  </div>
+                  <a class="product-price">$19.99</a>
+                </div>
+              </div>
+            </section>
+            <code>
+              <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
+              <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
+              <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
+              <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
+              <text style="padding-left: 60px;">&lt;/a&gt;</text>
+              <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
+              <text style="padding-left: 90px;">&lt;div&gt;</text>
+              <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
+              <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
+              <text style="padding-left: 150px;">&lt;Action&gt;</text>
+              <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
+              <text style="padding-left: 90px;">&lt;/div&gt;</text>
+              <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
+              <text style="padding-left: 60px;">&lt;/div>&gt;</text>
+              <text style="padding-left: 30px;">&lt;/div>&gt;</text>
+              <text>&lt;/section&gt;</text>
+            </code>
+          </section>
+
+
+          <section class="sub-section" id="content-structure">
+            <h3>Content Structure</h3>
+            <text>
+              Expand and shrink the page to see the vertical and horizontal content structure.
+            </text>
+            <section class="sub-section" id="product-listing">
+              <div class="product-listing">
+                <a href="#">
+                  <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
+                </a>
+                <div class="flex-display" id="product-title-genre">
+                  <div>
+                    <h3 class="product-list-title">The Intruder</h3>
+                    <figcaption class="product-genre-category">
+                      Action
+                    </figcaption>
+                  </div>
+                  <a class="product-price">$19.99</a>
+                </div>
+              </div>
+
+              <div class="product-listing">
+                <a href="#">
+                  <img class="product-list-img" src="img/product2.jpg" alt="Man firing machine gun off into the distance"/>
+                </a>
+                <div class="flex-display" id="product-title-genre">
+                  <div>
+                    <h3 class="product-list-title">The Intruder</h3>
+                    <figcaption class="product-genre-category">
+                      Action
+                    </figcaption>
+                  </div>
+                  <a class="product-price">$19.99</a>
+                </div>
+              </div>
+
+              <div class="product-listing">
+                <a href="#">
+                  <img class="product-list-img" src="img/product3.jpg" alt="Man firing machine gun off into the distance"/>
+                </a>
+                <div class="flex-display" id="product-title-genre">
+                  <div>
+                    <h3 class="product-list-title">The Intruder</h3>
+                    <figcaption class="product-genre-category">
+                      Action
+                    </figcaption>
+                  </div>
+                  <a class="product-price">$19.99</a>
+                </div>
+              </div>
+            </section>
+              <code>
+                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
+                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
+                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
+                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
+                <text style="padding-left: 60px;">&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
+                <text style="padding-left: 90px;">&lt;div&gt;</text>
+                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
+                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
+                <text style="padding-left: 150px;">&lt;Action&gt;</text>
+                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
+                <text style="padding-left: 90px;">&lt;/div&gt;</text>
+                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
+                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
+                <text>&lt;/section&gt;</text>
+                <br>
+                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
+                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
+                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
+                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
+                <text style="padding-left: 60px;">&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
+                <text style="padding-left: 90px;">&lt;div&gt;</text>
+                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
+                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
+                <text style="padding-left: 150px;">&lt;Action&gt;</text>
+                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
+                <text style="padding-left: 90px;">&lt;/div&gt;</text>
+                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
+                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
+                <text>&lt;/section&gt;</text>
+                <br>
+                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
+                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
+                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
+                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
+                <text style="padding-left: 60px;">&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
+                <text style="padding-left: 90px;">&lt;div&gt;</text>
+                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
+                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
+                <text style="padding-left: 150px;">&lt;Action&gt;</text>
+                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
+                <text style="padding-left: 90px;">&lt;/div&gt;</text>
+                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
+                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
+                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
+                <text>&lt;/section&gt;</text>
+              </code>
+          </section>
+
+          <h2>Citations</h2>
+          <section class="sub-section" id="citations">
+            <text class="citations">http://vhscollector.com/artwork</text>
+          </section>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
