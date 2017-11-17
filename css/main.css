@@ -50,14 +50,13 @@ h2 {
 
 p {
   font-family: 'body-font', sans-serif;
-  margin-right: 0.9rem;
-  margin-left: 0.9rem;
   line-height: 1.6rem;
 }
 
 figcaption {
   font-family: 'body-font', sans-serif;
   font-size: 0.8rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.2rem;
 }
 
@@ -71,6 +70,8 @@ a {
 
 figure {
   margin-bottom: 7rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /***
@@ -94,16 +95,24 @@ section, .flex-display {
   height: 100vh;
 }
 
-.con40 {
-  width: 40%;
+.con70 {
+  width: 90%;
 }
 
-.con70 {
-  width: 70%;
+.con40 {
+  width: 90%;
+}
+
+.textcent {
+  text-align: center;
 }
 
 .botmarg {
   margin-bottom: 7rem;
+}
+
+.topmargphone {
+  margin-top: 11rem;
 }
 
 .lineup {
@@ -118,13 +127,36 @@ section, .flex-display {
 }
 
 .icon {
+  width: 28%;
+}
+
+.headicon {
   width: 10rem;
-  border-radius: 2rem;
+}
+
+.homeicon {
+  width: 3rem;
+}
+
+.round {
+  border-radius: 1.5rem;
 }
 
 /***
 container and font colour styling
 ***/
+
+.shadwhi {
+  box-shadow: 0 8px 6px -4px white;
+}
+
+.shadwhitxt {
+  box-shadow: 0 8px 6px -8px white;
+}
+
+.shadblk {
+  box-shadow: 0 8px 6px -4px black;
+}
 
 .fontcol1 {
   color: #595959;
@@ -182,4 +214,18 @@ container and font colour styling
 
 #insta:hover, #insta:active, #insta:focus {
   background-color: #AFA7F9;
+}
+
+@media (min-width: 720px) {
+  .con40 {
+    width: 40%;
+  }
+
+  .con70 {
+    width: 70%;
+  }
+
+  .topmargphone {
+    margin-top: 15%;
+  }
 }
