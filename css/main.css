@@ -40,6 +40,14 @@ h1 {
   box-shadow: 0 8px 6px -8px black;
 }
 
+h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 6px -8px black;
+}
+
 p {
   font-family: 'body-font', sans-serif;
   margin-right: 0.9rem;
@@ -47,12 +55,26 @@ p {
   line-height: 1.6rem;
 }
 
+figcaption {
+  font-family: 'body-font', sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
 img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin-bottom: 7rem;
+}
+
 /***
-Structuring - adapted from P02 rewind
+Structuring
 ***/
 
 section, .flex-display {
@@ -68,6 +90,10 @@ section, .flex-display {
   height: 75vh;
 }
 
+.full {
+  height: 100vh;
+}
+
 .con40 {
   width: 40%;
 }
@@ -76,8 +102,8 @@ section, .flex-display {
   width: 70%;
 }
 
-.about {
-  height: 100vh;
+.botmarg {
+  margin-bottom: 7rem;
 }
 
 .lineup {
@@ -86,8 +112,14 @@ section, .flex-display {
   justify-content: space-between;
 }
 
+.lineup-cent {
+  display: flex;
+  justify-content: center;
+}
+
 .icon {
   width: 10rem;
+  border-radius: 2rem;
 }
 
 /***
@@ -130,14 +162,24 @@ container and font colour styling
   background-color: #e8e8e8;
 }
 
-#linkedin {
+.cyanbg {
+  background-color: #5BC0EB;
+  height: 100%;
+}
+
+.yellbg {
+  background-color: #FDE74C;
+  height: 100%;
+}
+
+#linkedin:hover, #linkedin:active, #linkedin:focus {
   background-color: #FDC5F5;
 }
 
-#flckr {
+#flckr:hover, #flckr:active, #flckr:focus {
   background-color: #AFEDB7;
 }
 
-#insta {
+#insta:hover, #insta:active, #insta:focus {
   background-color: #AFA7F9;
 }
