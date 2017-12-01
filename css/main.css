@@ -159,27 +159,6 @@ section, .flex-display {
   justify-content: center;
 }
 
-.icon {
-  width: 28%;
-}
-
-.headicon {
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.headmargph {
-  margin-bottom: 0;
-}
-
-.homeicon {
-  width: 3rem;
-}
-
-.round {
-  border-radius: 1.6rem;
-}
-
 /***
 container and font colour styling
 ***/
@@ -254,6 +233,41 @@ container and font colour styling
   background-color: #AFA7F9;
 }
 
+.icon {
+  width: 28%;
+}
+
+.headicon {
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.headmargph {
+  margin-bottom: 0;
+}
+
+.homeicon {
+  width: 3rem;
+}
+
+.round {
+  border-radius: 1.6rem;
+}
+
+.hovereff:hover, .hovereff:active, .hovereff:focus {
+  transition: 0.8s;
+  box-shadow: 0 8px 6px -4px black;
+}
+
+.hovereffw:hover, .hovereffw:active, .hovereffw:focus {
+  transition: 0.8s;
+  box-shadow: 0 8px 6px -4px white;
+}
+
+.imgspace {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 720px) {
   .con40 {
     width: 40%;
@@ -324,5 +338,9 @@ container and font colour styling
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .imgspace {
+    margin-bottom: 0;
   }
 }
