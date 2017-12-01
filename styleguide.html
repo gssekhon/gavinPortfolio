@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <title>Gavin Portfolio Styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/stylemain.css" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -44,37 +43,16 @@
 
           <section class="sub-section" id="navigation-style">
             <h3>Navigation Bar</h3>
-            <nav id="main-nav">
-              <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
-              <div id="main-nav-bar-hidden">
-                <div class="flex-display" id="home-close-btn-group">
-                  <a class="nav-link hidden-link" href="#">Link</a>
-                  <a class="nav-link hidden-link" id="close-nav">X</a>
-                </div>
-                <a class="nav-link hidden-link" href="#">Link</a>
-                <a class="nav-link hidden-link" href="#">Link</a>
-                <a class="nav-link hidden-link" href="#">Link</a>
+            <div>
+              <div>
+                <img class="homeicon" src="img/homeblk.png" alt="back to home page"/>
               </div>
-
-              <a class="nav-link" id="home-link-icon" href="#">Gavin</a>
-              <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
-            </nav>
+            </div>
 
             <code>
-              <text>&lt;nav id="main-nav"&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link"&gt;</text>
-              <text style="padding-left: 60px;">&lt;img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /&gt;</text>
-              <text style="padding-left: 30px;">&lt;/a&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;div id="main-nav-bar-hidden"&gt;</text>
-              <text style="padding-left: 60px;"><br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;<br /> &lt;a class="nav-link hidden-link" href="#"&gt;Link&lt;/a&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;/div&gt;</text>
-              <text style="padding-left: 30px;">&lt;a class="nav-link" id="home-link-icon" href="#"&gt;</text>
-              <text style="padding-left: 60px;">Gavin</text>
-              <text style="padding-left: 30px;">&lt;/a&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;a class="nav-link mobile-icon-link" id="search-toggle"&gt;</text>
-              <text style="padding-left: 60px;">&lt;img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/&gt;</text>
-              <text style="padding-left: 30px;">&lt;/a&gt;</text>
-              <text><br /> &lt;/nav&gt;</text>
+              <text>&lt;a href="index.html"&gt;</text>
+              <text style="padding-left: 30px;">&lt;img  class="homeicon" src="img/homeblk.png" alt="back to home page"/&gt;</text>
+              <text>&lt;/a&gt;</text>
             </code>
           </section>
 
@@ -82,51 +60,21 @@
             <h3>Button Styles</h3>
             <div class="button-div">
               <input class="button-back" type="button" value="Back" id="#" onclick="location.href='#'" />
-              <input class="button-go" type="submit" value="Go" />
+              <input class="button-go" type="submit" id="redbg" value="Go" />
+            </div>
+            <div class="button-div">
+              <input class="button-back" type="button" value="Back" id="#" onclick="location.href='#'" />
+              <input class="button-go" type="submit" id="cyanbg" value="Go" />
+            </div>
+            <div class="button-div">
+              <input class="button-back" type="button" value="Back" id="#" onclick="location.href='#'" />
+              <input class="button-go" type="submit" id="yellbg" value="Go" />
             </div>
 
             <code>
               <text>&lt;div class="button-div"&gt;</text>
               <text style="padding-left: 30px;"><br /> &lt;input class="button-back" type="button" value="Register" id="#" onclick="location.href='#'" /&gt;<br /> &lt;input class="button-go" type="submit" value="Sign In" /&gt;</text>
               <text><br /> &lt;/div&gt;</text>
-            </code>
-          </section>
-
-          <section class="sub-section" id="text-boxes">
-            <h3>Textboxes / Textareas</h3>
-            <h4>Textbox: Form</h4>
-            <form>
-              <input type="text" id="text-field" name="text" placeholder="text" required/>
-              <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
-              <input type="email" id="email" name="email" placeholder="email" required />
-              <select name="country">
-                <option value="" disabled selected>Country</option>
-                <option value="CAN">
-                  Canada
-                </option>
-
-                <option value="USA">
-                  United States
-                </option>
-              </select>
-            </form>
-
-            <code>
-              <text>&lt;form&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;input type="text" id="text-field" name="text" placeholder="text" required/&gt;<br /> &lt;input type="password" id="password" name="pass-word" placeholder="&amp;#9679;&amp;#9679;&amp;" required/&gt;<br /> &lt;input type="email" id="email" name="email" placeholder="email" required /&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;select name="country" placeholder="Select Your Country"&gt;</text>
-              <text style="padding-left: 60px;"><br /> &lt;option value="" disabled selected&gt;Country&lt;/option&gt;<br /> &lt;option value="CAN"&gt;<br /> Canada<br /> &lt;/option&gt;</text>
-              <text style="padding-left: 60px;">&lt;option value="USA"&gt;<br /> United States<br /> &lt;/option&gt;</text>
-              <text style="padding-left: 30px;"><br /> &lt;/select&gt;</text>
-              <text><br /> &lt;/form&gt;</text>
-              <text>&nbsp;</text>
-            </code>
-
-            <h4>Textbox: Textarea</h4>
-            <textarea id="page-textarea" placeholder="tell us what you think"></textarea>
-            <code>
-              <text>&lt;textarea id="page-textarea" placeholder="tell us what you think"&gt;&lt;/textarea&gt;</text>
-              <text>&nbsp;</text>
             </code>
           </section>
         </section>
@@ -203,153 +151,115 @@
 
         <section id="combined-elements">
           <h2>Combined Elements</h2>
-          <section class="sub-section">
-            <h3>Product Listing</h3>
-            <section class="sub-section" id="product-listing">
-              <div class="product-listing">
-                <a href="#">
-                  <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
-                </a>
-                <div class="flex-display" id="product-title-genre">
-                  <div>
-                    <h3 class="product-list-title">The Intruder</h3>
-                    <figcaption class="product-genre-category">
-                      Action
-                    </figcaption>
-                  </div>
-                  <a class="product-price">$19.99</a>
-                </div>
-              </div>
-            </section>
+
+          <section class="sub-section yellcon" id="content-structure">
+            <h3>Content Structure</h3>
+            <text class="botmarg">
+              Expand and shrink the page to see the vertical and horizontal content structure.
+            </text>
+
+
+            <p class="fontcol1 botmarg">
+              From here, we finalized out final website and incorporated the research to make
+              a parallax website that could display the information to a lay audience without
+              seeming like a boring government website.
+            </p>
+
+            <div class="lineup-cent">
+              <figure>
+                <img class="shadblk" src="img/bee.png" alt="layout of bee website"/>
+                <figcaption class="fontcol1 lineup-cent">
+                  One final page layout
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="lineup-cent textcent">
+              <h2 class="fontcol1">Final Website</h2>
+            </div>
+
+            <div class="lineup-cent botmarg">
+              <a href="https://www.sfu.ca/~harmits/Bees%20In%20Ontario/">
+                <img class="headicon" src="img/beeicon.svg" alt="bee website icon"/>
+              </a>
+            </div>
+
+
             <code>
-              <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
-              <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
-              <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
-              <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
-              <text style="padding-left: 60px;">&lt;/a&gt;</text>
-              <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
-              <text style="padding-left: 90px;">&lt;div&gt;</text>
-              <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
-              <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
-              <text style="padding-left: 150px;">&lt;Action&gt;</text>
-              <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
-              <text style="padding-left: 90px;">&lt;/div&gt;</text>
-              <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
+              <text>&lt;p class="fontcol1 botmarg"&gt;</text>
+              <text style="padding-left: 30px;">From here, we finalized out final website and incorporated the research to make
+              a parallax website that could display the information to a lay audience without
+              seeming like a boring government website.</text>
+              <text>&lt;/p&gt;</text>
+              <br>
+              <text>&lt;div class="lineup-cent"&gt;</text>
+              <text style="padding-left: 30px;">&lt;figure&gt;</text>
+              <text style="padding-left: 60px;">&lt;img class="shadblk" src="img/bee.png" alt="layout of bee website"/&gt;</text>
+              <text style="padding-left: 60px;">&lt;figcaption class="fontcol1 lineup-cent"&gt;</text>
+              <text style="padding-left: 90px;">&lt;One final page layout&gt;</text>
+              <text style="padding-left: 60px;">&lt;/figcaption&gt;</text>
+              <text style="padding-left: 30px;">&lt;/figure&gt;</text>
+              <text>&lt;/div&gt;</text>
+              <br>
+              <text>&lt;div class="lineup-cent botmarg"&gt;</text>
+              <text style="padding-left: 30px;">&lt;href="https://www.sfu.ca/~harmits/Bees%20In%20Ontario/"</text>
+              <text style="padding-left: 60px;">&lt;img class="headicon" src="img/beeicon.svg" alt="bee website icon"/&gt;</text>
               <text style="padding-left: 60px;">&lt;/div>&gt;</text>
-              <text style="padding-left: 30px;">&lt;/div>&gt;</text>
-              <text>&lt;/section&gt;</text>
+              <text style="padding-left: 30px;">&lt;/a&gt;</text>
+              <text>&lt;/div&gt;</text>
             </code>
           </section>
 
+          <section class="sub-section bluecon">
+            <div class="lineup-cent">
+              <h2 class="shadwhitxt fontcol2" id="bana">Banana</h2>
+            </div>
 
-          <section class="sub-section" id="content-structure">
-            <h3>Content Structure</h3>
-            <text>
-              Expand and shrink the page to see the vertical and horizontal content structure.
-            </text>
-            <section class="sub-section" id="product-listing">
-              <div class="product-listing">
-                <a href="#">
-                  <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
-                </a>
-                <div class="flex-display" id="product-title-genre">
-                  <div>
-                    <h3 class="product-list-title">The Intruder</h3>
-                    <figcaption class="product-genre-category">
-                      Action
-                    </figcaption>
-                  </div>
-                  <a class="product-price">$19.99</a>
-                </div>
-              </div>
+            <div class="lineup-cent">
+              <figure>
+                <img class="shadwhi" src="img/bananaorig.jpg" alt="picture of a regular yellow banana"/>
+                <figcaption class="fontcol2 lineup-cent">
+                  Original
+                </figcaption>
+              </figure>
+            </div>
 
-              <div class="product-listing">
-                <a href="#">
-                  <img class="product-list-img" src="img/product2.jpg" alt="Man firing machine gun off into the distance"/>
-                </a>
-                <div class="flex-display" id="product-title-genre">
-                  <div>
-                    <h3 class="product-list-title">The Intruder</h3>
-                    <figcaption class="product-genre-category">
-                      Action
-                    </figcaption>
-                  </div>
-                  <a class="product-price">$19.99</a>
-                </div>
-              </div>
+            <div>
+              <p class="fontcol2">
+                This image I originally took started off by lacking character due to
+                it being overly yellow without any details emphasived. It is easy to pass
+                over this image because after a quick look there is nothing that grabs the viewers eye.
+              </p>
+              <p class="fontcol2 botmargph">
+                To solve this problem, I needed to make the photo more dramatic.
+                In photoshop, I used primarily the contrast and saturation adjustment
+                tools and turned them up. This increased how vivid the photo was, and
+                it made details pop out. The effect: an overly-dramatic banana that carries
+                a heaver tone than the original banana photo.
+              </p>
+            </div>
 
-              <div class="product-listing">
-                <a href="#">
-                  <img class="product-list-img" src="img/product3.jpg" alt="Man firing machine gun off into the distance"/>
-                </a>
-                <div class="flex-display" id="product-title-genre">
-                  <div>
-                    <h3 class="product-list-title">The Intruder</h3>
-                    <figcaption class="product-genre-category">
-                      Action
-                    </figcaption>
-                  </div>
-                  <a class="product-price">$19.99</a>
-                </div>
-              </div>
-            </section>
-              <code>
-                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
-                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
-                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
-                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
-                <text style="padding-left: 60px;">&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
-                <text style="padding-left: 90px;">&lt;div&gt;</text>
-                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
-                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
-                <text style="padding-left: 150px;">&lt;Action&gt;</text>
-                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
-                <text style="padding-left: 90px;">&lt;/div&gt;</text>
-                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
-                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
-                <text>&lt;/section&gt;</text>
-                <br>
-                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
-                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
-                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
-                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
-                <text style="padding-left: 60px;">&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
-                <text style="padding-left: 90px;">&lt;div&gt;</text>
-                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
-                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
-                <text style="padding-left: 150px;">&lt;Action&gt;</text>
-                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
-                <text style="padding-left: 90px;">&lt;/div&gt;</text>
-                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
-                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
-                <text>&lt;/section&gt;</text>
-                <br>
-                <text>&lt;section class="sub-section" id="product-listing"&gt;</text>
-                <text style="padding-left: 30px;">&lt;div class="product-listing"&gt;</text>
-                <text style="padding-left: 60px;">&lt;a href="#"&gt;</text>
-                <text style="padding-left: 90px;">&lt;img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/&gt;</text>
-                <text style="padding-left: 60px;">&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;div class="flex-display" id="product-title-genre"&gt;</text>
-                <text style="padding-left: 90px;">&lt;div&gt;</text>
-                <text style="padding-left: 120px;">&lt;h3 class="product-list-title"&gt;The Intruder&lt;/h3&gt;</text>
-                <text style="padding-left: 120px;">&lt;figcaption class="product-genre-category"&gt;</text>
-                <text style="padding-left: 150px;">&lt;Action&gt;</text>
-                <text style="padding-left: 120px;">&lt;/figcaption&gt;</text>
-                <text style="padding-left: 90px;">&lt;/div&gt;</text>
-                <text style="padding-left: 90px;">&lt;a class="product-price"&gt;$19.99&lt;/a&gt;</text>
-                <text style="padding-left: 60px;">&lt;/div>&gt;</text>
-                <text style="padding-left: 30px;">&lt;/div>&gt;</text>
-                <text>&lt;/section&gt;</text>
-              </code>
+            <div class="lineup-cent botmargph">
+              <figure>
+                <img class="shadwhi" src="img/banana.jpg" alt="picture of a dramatic yellow banana"/>
+                <figcaption class="fontcol2 lineup-cent">
+                  Saturation and contrast to change the tone of the image
+                </figcaption>
+              </figure>
+            </div>
           </section>
 
           <h2>Citations</h2>
           <section class="sub-section" id="citations">
-            <text class="citations">http://vhscollector.com/artwork</text>
+            <text class="citations">https://dribbble.com/shots/1824902-Manual-Magazine-Blog-Content-Layout</text>
+            <text class="citations">https://dribbble.com/shots/3118358-Flow-Design-studio</text>
+            <text class="citations">https://dribbble.com/shots/2209044-Furion-Freelancer-Portfolio</text>
+            <text class="citations">https://dribbble.com/shots/3863400-Anthony-Sho-Homepage</text>
+            <text class="citations">https://www.behance.net/gallery/14451657/Picku-Free-HTML-Template</text>
+            <text class="citations">http://pluspng.com/img-png/instagram-png-instagram-png-logo-512.png</text>
+            <text class="citations">https://imageog.flaticon.com/icons/png/512/25/25384.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF</text>
+            <text class="citations">http://www.freepngimg.com/download/linkedin/5-2-linkedin-picture.png</text>
+            <text class="citations">https://imageog.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF</text>
           </section>
         </section>
       </div>

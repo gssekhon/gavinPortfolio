@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.7rem;
   letter-spacing: 0.4rem;
-  margin-top: 15%;
+  margin-top: 1rem;
   margin-bottom: 1.3rem;
   box-shadow: 0 8px 6px -8px black;
 }
@@ -58,6 +58,7 @@ figcaption {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
+  text-align: center;
 }
 
 img {
@@ -69,9 +70,14 @@ a {
 }
 
 figure {
-  margin-bottom: 7rem;
+  width: 100%;
+  margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+a p {
+  color: white;
 }
 
 /***
@@ -111,8 +117,35 @@ section, .flex-display {
   margin-bottom: 7rem;
 }
 
+.botmargph {
+  margin-bottom: 2rem;
+}
+
 .topmargphone {
   margin-top: 11rem;
+}
+
+.hometop{
+  margin-top: 4rem;
+}
+
+.maincent {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.notop {
+  margin-top: 0;
+}
+
+.topthree {
+  margin-top: 2rem;
+}
+
+.pushoff {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 }
 
 .lineup {
@@ -131,8 +164,12 @@ section, .flex-display {
 }
 
 .headicon {
-  width: 10rem;
+  width: 8rem;
   border-radius: 2rem;
+}
+
+.headmargph {
+  margin-bottom: 0;
 }
 
 .homeicon {
@@ -140,7 +177,7 @@ section, .flex-display {
 }
 
 .round {
-  border-radius: 1.5rem;
+  border-radius: 1.6rem;
 }
 
 /***
@@ -168,27 +205,19 @@ container and font colour styling
 }
 
 .bg1 {
-  background-color: #e8e8e8;
-}
-
-.bg1:hover, .bg1:active, .bg1:focus {
-  background-color: #FF3F4C;
+  background-color: #ccff5e;
 }
 
 .bg2 {
-  background-color: #595959;
-}
-
-.bg2:hover, .bg2:active, .bg2:focus {
   background-color: #5BC0EB;
 }
 
 .bg3 {
-  background-color: #e8e8e8;
+  background-color: #FDE74C;
 }
 
-.bg3:hover, .bg3:active, .bg3:focus {
-  background-color: #FDE74C;
+.bg4 {
+  background-color: #ff8401;
 }
 
 .bg1z {
@@ -205,15 +234,23 @@ container and font colour styling
   height: 100%;
 }
 
+#linkedin, #flckr, #insta {
+  transition: 2s;
+  background-color: #e8e8e8;
+}
+
 #linkedin:hover, #linkedin:active, #linkedin:focus {
+  transition: 1s;
   background-color: #FDC5F5;
 }
 
 #flckr:hover, #flckr:active, #flckr:focus {
+  transition: 1s;
   background-color: #AFEDB7;
 }
 
 #insta:hover, #insta:active, #insta:focus {
+  transition: 1s;
   background-color: #AFA7F9;
 }
 
@@ -228,5 +265,64 @@ container and font colour styling
 
   .topmargphone {
     margin-top: 15%;
+  }
+
+  .botmargph {
+    margin-bottom: 7rem;
+  }
+
+  .headmargph {
+    margin-bottom: 2rem;
+  }
+
+  .bg1 {
+    transition: 3s;
+    background-color: #e8e8e8;
+  }
+
+  .bg1:hover, .bg1:active, .bg1:focus {
+    transition: 3s;
+    background-color: #ccff5e;
+  }
+
+  .bg2 {
+    transition: 3s;
+    background-color: #595959;
+  }
+
+  .bg2:hover, .bg2:active, .bg2:focus {
+    transition: 3s;
+    background-color: #5BC0EB;
+  }
+
+  .bg3 {
+    transition: 3s;
+    background-color: #e8e8e8;
+  }
+
+  .bg3:hover, .bg3:active, .bg3:focus {
+    transition: 3s;
+    background-color: #FDE74C;
+  }
+
+  .bg4 {
+    transition: 3s;
+    background-color: #595959;
+  }
+
+  .bg4:hover, .bg4:active, .bg4:focus {
+    transition: 3s;
+    background-color: #ff8401;
+  }
+
+  .pushoff {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+
+  .lineupthree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
